@@ -13,4 +13,8 @@ public class CountVowlsTest {
         assertEquals(0, CountVowls.findVowls(""));
         assertEquals(0, CountVowls.findVowls(null));
     }
+    @Test
+    void testWithCapitalLetters(){
+        assertEquals(3,CountVowls.findVowls("HALLOWORLD"));
+    }
 }

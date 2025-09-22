@@ -7,8 +7,12 @@ public class CountVowls {
 
         if (s==null||s.isEmpty())
             return 0;
+
+        s = s.toLowerCase();
+
         for (int i=0;i<s.length();i++){
-            if (s.contains("a")||s.contains("e")||s.contains("i")||s.contains("o")||s.contains("u"))
+            char c=s.charAt(i);
+            if (c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
                 count++;
         }
         return count;
